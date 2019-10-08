@@ -18,6 +18,10 @@ In hold-out cross-validation, we separates the dataset T (of size n) into three 
 - The validation subset Tv is periodically used to evaluate the model performance during the training to avoid over-training. The training is stopped, when the performance on Tv is good enough or when it stops improving.
 - The testing subset Tt is used to gain a confident estimate of the models’ performance.
 
+The holdout method has two basic drawbacks
+- In problems where we have a sparse dataset we may not be able to afford the “luxury” of setting aside a portion of the dataset for testing
+- Since it is a single train-and-test experiment, the holdout estimate of error rate will be misleading if we happen to get an “unfortunate” split. The chosen split heavily affects the quality of the final model. The estimate of the model performance (evaluated on the testing set) should be stable – it should have a low bias and variance. If the dataset is split poorly, the data subsets will not sufficiently cover the data and especially the variance will increase.
+
 ### K-fold cross-validation
 The k-fold cross-validation is useful if not enough data for the hold-out cross-validation is available. The dataset T is divided into k parts of the same size. One part forms the validation (testing) set Tv, the other parts form the training set Ttr. This process is repeated for each part of the data.
 
