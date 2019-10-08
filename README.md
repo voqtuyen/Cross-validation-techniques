@@ -4,14 +4,9 @@
 Suppose we want to train a supervised learning model on the dataset T = {<a href="https://www.codecogs.com/eqnedit.php?latex={(x^{1},y^{1}),&space;(x^{2},y^{2}),...,(x^{m},y^{m})}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{(x^{1},y^{1}),&space;(x^{2},y^{2}),...,(x^{m},y^{m})}" title="{(x^{1},y^{1}), (x^{2},y^{2}),...,(x^{m},y^{m})}" /></a>}. 
 At the end of the training process, the final model should predict correct outputs for the input samples from T, but it should also be able to generalize well to previously unseen data.
 
-Generalization refers to your model's ability to adapt properly to new, previously unseen data, *drawn from the same distribution* as the one used to create the model [9]. Poor generalization is maily caused by overfitting and underfitting. If the model is overfitting, it just memorizes the training examples and it is not able to give correct outputs also for examples that were not in the training set. On the contrary, if the model is underfitting, it does not perform well on the training examples as well as for examples that are not in the training set.
+Generalization refers to your model's ability to adapt properly to new, previously unseen data, *drawn from the same distribution* as the one used to create the model [9].  Poor generalization can be characterized by over-training. If the model over-trains, it just memorizes the training examples and it is not able to give correct outputs also for patterns that were not in the training dataset.
 
-Cross-validation techniques could be used for model selection and performance estimation.
-- Model selection
-  - Seeking for optimal hyper-parameters of an algorithm for a given problem/dataset
-  - Select the best algorithm for a given problem/dataset
-- Performance estimation
-  - Cross-validation techniques are used to ensure good generalization and to avoid overfitting. 
+Cross-validation techniques belong to conventional approaches used to ensure good generalization and to avoid over-training. The basic idea is to divide the dataset T into two subsets – one subset is used for training while the other subset is left out and the performance of the final model is evaluated on it. The main purpose of cross-validation is to achieve a stable and confident estimate of the model performance. Cross-validation techniques can also be used when evaluating and mutually comparing more models, various training algorithms, or when seeking for optimal model parameters
 
 ## Reference
 
