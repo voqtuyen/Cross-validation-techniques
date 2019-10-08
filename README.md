@@ -20,6 +20,9 @@ In hold-out cross-validation, we separates the dataset T (of size n) into three 
 
 ![Hold-out cross validation](assets/hold-out_cross_validation.png)
 
+Visualization of hold-out cross validation
+![Hold-out cross validation visualization](assets/hold-out_cv_visualization.png)
+
 The holdout method has two basic drawbacks
 - In problems where we have a sparse dataset we may not be able to afford the “luxury” of setting aside a portion of the dataset for testing
 - Since it is a single train-and-test experiment, the holdout estimate of error rate will be misleading if we happen to get an “unfortunate” split. The chosen split heavily affects the quality of the final model. The estimate of the model performance (evaluated on the testing set) should be stable – it should have a low bias and variance. If the dataset is split poorly, the data subsets will not sufficiently cover the data and especially the variance will increase.
