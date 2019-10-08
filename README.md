@@ -6,9 +6,20 @@ At the end of the training process, the final model should predict correct outpu
 
 Generalization refers to your model's ability to adapt properly to new, previously unseen data, *drawn from the same distribution* as the one used to create the model [9].  Poor generalization can be characterized by over-training. If the model over-trains, it just memorizes the training examples and it is not able to give correct outputs also for patterns that were not in the training dataset.
 
-Cross-validation techniques belong to conventional approaches used to ensure good generalization and to avoid over-training. The basic idea is to divide the dataset T into two subsets – one subset is used for training while the other subset is left out and the performance of the final model is evaluated on it. The main purpose of cross-validation is to achieve a stable and confident estimate of the model performance. Cross-validation techniques can also be used when evaluating and mutually comparing more models, various training algorithms, or when seeking for optimal model parameters
+Cross-validation techniques belong to conventional approaches used to ensure good generalization and to avoid over-training. The basic idea is to divide the dataset T into two subsets – one subset is used for training while the other subset is left out and the performance of the final model is evaluated on it. 
+- The main purpose of cross-validation is to achieve a stable and confident estimate of the model performance. 
+- Cross-validation techniques can also be used when evaluating and mutually comparing more models, various training algorithms, or when seeking for optimal model parameters
 
-Commonly used types of cross-validation – hold-out cross validation and k-fold cross-validation
+Commonly used types of cross-validation: hold-out cross validation and k-fold cross-validation
+
+### Hold-out cross-validation
+In hold-out cross-validation, we separates the dataset T (of size n) into three mutually disjoint subsets – training Ttr, validation Tv, and testing Tt of sizes ntr, nv and nt successively. 
+- The model is trained on the training subset Ttr, 
+- The validation subset Tv is periodically used to evaluate the model performance during the training to avoid over-training. The training is stopped, when the performance on Tv is good enough or when it stops improving.
+- The testing subset Tt is used to gain a confident estimate of the models’ performance.
+
+### K-fold cross-validation
+The k-fold cross-validation is useful if not enough data for the hold-out cross-validation is available. The dataset T is divided into k parts of the same size. One part forms the validation (testing) set Tv, the other parts form the training set Ttr. This process is repeated for each part of the data.
 
 ## Reference
 
