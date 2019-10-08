@@ -2,7 +2,9 @@
 
 
 Suppose we want to train a supervised learning model on the dataset T = {<a href="https://www.codecogs.com/eqnedit.php?latex={(x^{1},y^{1}),&space;(x^{2},y^{2}),...,(x^{m},y^{m})}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{(x^{1},y^{1}),&space;(x^{2},y^{2}),...,(x^{m},y^{m})}" title="{(x^{1},y^{1}), (x^{2},y^{2}),...,(x^{m},y^{m})}" /></a>}. 
-At the end of the training process, the final model should predict correct outputs for the input samples from T, but it should also be able to generalize well to previously unseen data
+At the end of the training process, the final model should predict correct outputs for the input samples from T, but it should also be able to generalize well to previously unseen data.
+
+Generalization refers to your model's ability to adapt properly to new, previously unseen data, drawn from the same distribution as the one used to create the model[9]. 
 
 
 
@@ -16,3 +18,4 @@ At the end of the training process, the final model should predict correct outpu
 6. http://www.coli.uni-saarland.de/~crocker/Teaching/Connectionist/lecture11_4up.pdf
 7. https://stats.stackexchange.com/questions/52274/how-to-choose-a-predictive-model-after-k-fold-cross-validation
 8. https://datascience.stackexchange.com/questions/13960/how-to-choose-a-classifier-after-cross-validation/13964
+9. [Machine learning crash course](https://developers.google.com/machine-learning/crash-course/generalization/video-lecture#targetText=Generalization,used%20to%20create%20the%20model.&targetText=Divide%20a%20data%20set%20into%20a%20training%20set%20and%20a%20test%20set)
