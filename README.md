@@ -6,7 +6,9 @@ At the end of the training process, the final model should predict correct outpu
 
 Generalization refers to your model's ability to adapt properly to new, previously unseen data, *drawn from the same distribution* as the one used to create the model [9]. Poor generalization is maily caused by overfitting and underfitting. If the model is overfitting, it just memorizes the training examples and it is not able to give correct outputs also for examples that were not in the training set. On the contrary, if the model is underfitting, it does not perform well on the training examples as well as for examples that are not in the training set.
 
-
+Cross-validation techniques are used to ensure good generalization and to avoid overfitting. The basic idea is to divide the dataset T into two subsets – one subset is used for training while the other subset is left out and the performance of the final model is evaluated on it. Cross-validation techniques could be used for model selection and performance estimation
+- Model selection
+- Performance estimation
 
 ## Reference
 
