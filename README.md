@@ -22,3 +22,4 @@ Commonly used types of cross-validation – hold-out cross validation and k-fold
 8. https://datascience.stackexchange.com/questions/13960/how-to-choose-a-classifier-after-cross-validation/13964
 9. [Machine learning crash course](https://developers.google.com/machine-learning/crash-course/generalization/video-lecture#targetText=Generalization,used%20to%20create%20the%20model.&targetText=Divide%20a%20data%20set%20into%20a%20training%20set%20and%20a%20test%20set)
 [10] https://www.quora.com/What-is-generalization-in-machine-learning
+[11] http://research.cs.tamu.edu/prism/lectures/pr/pr_l13.pdf
