@@ -1,4 +1,4 @@
-# Data Splitting In Machine Learning
+# Guideline to data splitting in machine learning
 
 
 
