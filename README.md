@@ -4,7 +4,7 @@
 Suppose we want to train a supervised learning model on the dataset T = {<a href="https://www.codecogs.com/eqnedit.php?latex={(x^{1},y^{1}),&space;(x^{2},y^{2}),...,(x^{m},y^{m})}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{(x^{1},y^{1}),&space;(x^{2},y^{2}),...,(x^{m},y^{m})}" title="{(x^{1},y^{1}), (x^{2},y^{2}),...,(x^{m},y^{m})}" /></a>}. 
 At the end of the training process, the final model should predict correct outputs for the input samples from T, but it should also be able to generalize well to previously unseen data.
 
-Generalization refers to your model's ability to adapt properly to new, previously unseen data, drawn from the same distribution as the one used to create the model[9]. 
+Generalization refers to your model's ability to adapt properly to new, previously unseen data, *drawn from the same distribution* as the one used to create the model [9]. 
 
 
 
