@@ -29,6 +29,18 @@ The k-fold cross-validation is useful if not enough data for the hold-out cross-
 
 ![K-fold cross validation](assets/k-fold_cross_validation.png)
 
+How many folds are needed?
+
+- With a large number of folds
+    + The bias of the true error rate estimator will be small (the estimator will be very accurate)
+    - The variance of the true error rate estimator will be large
+    - The computational time will be very large as well (many experiments)
+
+- With a small number of folds
+    + The number of experiments and, therefore, computation time are reduced
+    + The variance of the estimator will be small
+    - The bias of the estimator will be large (conservative or higher than the
+true error rate)
 
 ## Reference
 
