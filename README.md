@@ -32,6 +32,9 @@ The k-fold cross-validation is useful if not enough data for the hold-out cross-
 
 ![K-fold cross validation](assets/k-fold_cross_validation.png)
 
+Illustration of k-fold cross validation
+![K-fold cross validation](assets/kfoldcv.jpg)
+
 How many folds are needed?
 
 - With a large number of folds
