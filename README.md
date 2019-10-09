@@ -47,7 +47,7 @@ true error rate)
 
 What model should be chosen as the final model?
 
-After performing CV with different models (algorithm combination, etc) chose the one that performed better regarding error and its variance among folds. You will need to rebuild the model with the whole dataset.
+You don't select any of the k classifiers built during k-fold cross-validation. After performing CV with different models (algorithm combination, etc) chose the one that performed better regarding error and its variance among folds. You will need to rebuild the model with the whole dataset.
 
 ## Reference
 
