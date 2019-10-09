@@ -49,7 +49,7 @@ What model should be chosen as the final model?
 
 You don't select any of the k classifiers built during k-fold cross-validation. After performing CV with different models (algorithm combination, etc) chose the one that performed better regarding error and its variance among folds. You will need to rebuild the model with the whole dataset.
 
-### Leave-one-out cross validatin
+### Leave-one-out cross validation
 
 Leave-one-out crossvalidation is simply k-fold crossvalidation with k set to n, the number of instances in the data set. This means that the test set only consists of a single instance, which will be classified either correctly or incorrectly.
 - Advantages: maximal use of training data, i.e., training on n−1 instances. The procedure is deterministic, no sampling involved.
