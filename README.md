@@ -45,6 +45,10 @@ How many folds are needed?
     - The bias of the estimator will be large (conservative or higher than the
 true error rate)
 
+What model should be chosen as the final model?
+
+After performing CV with different models (algorithm combination, etc) chose the one that performed better regarding error and its variance among folds. You will need to rebuild the model with the whole dataset.
+
 ## Reference
 
 1. https://www.mff.cuni.cz/veda/konference/wds/proc/pdf10/WDS10_105_i1_Reitermanova.pdf
